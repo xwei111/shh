@@ -1,0 +1,11 @@
+:root{
+  --basrColor:{
+    color: #373737;
+  }
+  --backgroundColor:{
+    background-color: #ffffff;
+  }
+  --backgroundSize:{
+    background-size: cover;
+  }
+}
