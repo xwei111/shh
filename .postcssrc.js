@@ -28,10 +28,7 @@ module.exports = {
     }),
     require('postcss-pxtorem')({
       rootValue: 75,
-      propList: ['*'],
-      selectorBlanckList: [
-        '.selectClass'
-      ]
+      propList: ['*']
     })
   ]
 };

@@ -1,5 +1,11 @@
 @import '../../../assets/var.css';
 /* ----------------会员中心（默认页的样式）----------------- */
+:root{
+  --flexRow:{
+    display: flex;
+    flex-direction: row;
+  }
+}
 .head{
   width:100%;
   height: 450px;
@@ -62,6 +68,31 @@
       height: 28px;
     }
   }
-  
+  & .mainContent{
+    @apply --flexRow;
+    flex-wrap: wrap;
+    & .itemBox{
+      width: 33.33%;
+      float: left;
+      font-size: 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+      & img{
+        width:100px;
+        height: 100px;
+      }
+      & p{
+        line-height: 50px;
+        font-weight: 900;
+        font-size: 30px;
+      }
+      & span{
+        line-height: 30px;
+      }
+    }
+  }
 }
 

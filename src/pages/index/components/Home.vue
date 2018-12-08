@@ -15,8 +15,8 @@
         <p>会员专属9大特权</p>
         <img src='../image/title_bg_2.png' />
       </div>
-      <div>
-        <div v-for="item in itemData" :key='item.id'>
+      <div class='mainContent'>
+        <div class='itemBox' v-for="item in itemData" :key='item.id'>
           <img :src='item.url' />
           <p>{{item.title}}</p>
           <span>{{item.detail}}</span>
